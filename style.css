@@ -1,0 +1,263 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+body{
+    overscroll-behavior: none;
+}
+/* custom scroll ber */
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #111b21; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#32404e ; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a3e41; 
+  }
+/* custom scroll ber code end */
+
+/* background */
+.full-background{
+    height: 100%;
+    width: 100%;
+}
+
+.landing-wrapper-top{
+    height: 222px;
+    width: 100%;
+    background-color: #00a984ed;
+    position: absolute;
+    z-index: -1;
+}
+.landing-wrapper-down{
+    height:118%;
+    width: 100%;
+    background-color: #111b21;
+    position: absolute;
+    z-index: -2;
+}
+/* content area */
+.content-area{
+    /* height: 100%; */
+    /* width: 90%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 36px;
+    padding-right: 36px;
+    /* padding-bottom: 92px; */
+}
+/* logo */
+.logo_and_name{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* logo */
+.logo{
+    height: 10vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    padding-bottom:35px ;
+}
+
+.logo-img{
+    height: 38px;
+    width: 38px;
+    /* background-color: #111b21; */
+    background-image: url("/Project/2/drive/WhatsApp_logo.svg");
+    background-size: cover;
+}
+
+/* logo name */
+.web-name{
+    color: white;
+    margin-left: 14px;
+    font-weight: 500;
+    font-size: 14px;
+}
+/* login box */
+.login-box{
+    height: 945px;
+    width: 90vw;
+    background-color: rgb(255, 254, 248);
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+/* login */
+.login{
+    height: 47%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-area{
+    height: 75%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* .login-msg{
+    height: ;
+    width: ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+} */
+
+/* login input area */
+.login-input{
+    height: 220px;
+    width: 292px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* enter phone number massage */
+.enter-ph-msg{
+    font-size: 28px;
+    color: #41525dbd;
+    font-weight: 100;
+}
+
+/* select country massage */
+.select-country-msg{
+    color: #8696a0d5;
+    font-size: 17px;
+}
+
+/* select country */
+.country {
+    width: 292px;
+    height: 54px;
+    border: 1px solid #e3e3e3;
+    background-color: rgb(255, 254, 248);
+    border-radius: 8px;
+    font-size: 17px;
+    color: #353c41;
+}
+.country:focus-visible{
+    outline: 1px solid #0c8671;
+}
+
+.flag{
+    height: 10px;
+    width: auto;
+    background-image: url(/Project/2/drive/Flags/india.svg);
+
+}
+
+/* enter phone number */
+.phone-no{
+    width: 256px;
+    height: 22px;
+    border: 1px solid #e3e3e3;
+    background-color: rgb(255, 254, 248);
+    border-radius: 8px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+    padding: 14.5px 10px 15.5px 24px;
+    font-size: 16px;
+    color: #363f44;
+    
+}
+
+.phone-no:focus{
+    outline: 1px solid #0c8671;
+
+}
+/* next button */
+.next-button button{
+    height: 41px;
+    width: 90px;
+    background-color: #007562;
+    color: #e3e3e3;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 3px;
+}
+
+.next-button button:hover{
+    background-color: #01836e;
+}
+.next-button button:active{
+    background-color: #01a086;
+}
+.link-with-QR{
+    margin-top: 30px;
+}
+.link-with-QR a{
+    text-decoration: none;
+    color: #0c8671;
+    font-size: 18px;
+
+}
+/* tutorial */
+.tutorial{
+    height: 44.4%;
+    /* width: 100%; */
+    background-color: #f9f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px 40px 60px;
+}
+
+.tutorial-msg{
+    font-size: 28px;
+    color: #41525dbf;
+    font-weight: 100;
+    margin-bottom: 10px;
+
+}
+
+.help a{
+    color: #0c8671;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+.help{
+    margin-bottom: 40px;
+}
+.help a:hover{
+    text-decoration:underline #0c8671 ;
+}
+
+.tutorial-video{
+    height: auto;
+    width: 560px;
+
+}
+
