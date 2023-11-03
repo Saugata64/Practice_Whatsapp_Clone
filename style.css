@@ -84,7 +84,7 @@ body{
     height: 38px;
     width: 38px;
     /* background-color: #111b21; */
-    background-image: url("/Project/2/drive/WhatsApp_logo.svg");
+    background-image: url("/Project/Project Whatsapp/drive/WhatsApp_logo.svg");
     background-size: cover;
 }
 
@@ -172,7 +172,7 @@ body{
 .flag{
     height: 10px;
     width: auto;
-    background-image: url(/Project/2/drive/Flags/india.svg);
+    background-image: url("/Project/Project Whatsapp/drive/Flags/india.svg");
 
 }
 
