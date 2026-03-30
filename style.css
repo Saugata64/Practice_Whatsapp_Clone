@@ -8,6 +8,64 @@
 body{
     overscroll-behavior: none;
 }
+
+.disclaimer-overlay{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 9999;
+    padding: 20px;
+}
+
+.disclaimer-modal{
+    width: min(520px, 100%);
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.22);
+    padding: 28px 28px 24px;
+    text-align: center;
+}
+
+.disclaimer-modal h2{
+    margin-bottom: 18px;
+    color: #0f3f36;
+    font-size: 1.85rem;
+}
+
+.disclaimer-modal p{
+    margin: 0 0 14px;
+    color: #4a5a64;
+    line-height: 1.7;
+    font-size: 0.96rem;
+}
+
+.disclaimer-modal p:last-of-type{
+    margin-bottom: 22px;
+}
+
+.disclaimer-close{
+    cursor: pointer;
+    border: none;
+    border-radius: 999px;
+    background: #00a884;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-weight: 700;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.disclaimer-close:hover{
+    background: #029775;
+    transform: translateY(-1px);
+}
+
+.disclaimer-close:active{
+    background: #017b68;
+}
+
 /* custom scroll ber */
 /* width */
 ::-webkit-scrollbar {

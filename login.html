@@ -11,6 +11,19 @@
     <title>WhatsApp</title>
 </head>
 <body>
+
+    <!-- disclaimer -->
+<div class="disclaimer-overlay" id="disclaimerOverlay">
+        <div class="disclaimer-modal">
+            <h2>Disclaimer</h2>
+            <p>This site is a PERSONAL EDUCATIONAL PROJECT and is not the official WhatsApp Web Log in page. Content is provided for educational and informational use only.</p>
+            <p>I am not affiliated with the company or brand in any way</p>
+            <p>All trademarks, logos, and brands are property of their respective owners.</p>
+            <button class="disclaimer-close" id="disclaimerClose">I Understand</button>
+        </div>
+    </div>
+
+
     <!-- full-backgroung -->
 <div class="full-backgroung">
     <div class="landing-wrapper-top">
@@ -67,5 +80,19 @@
     </div>
 </div>
 </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const overlay = document.getElementById('disclaimerOverlay');
+            const closeButton = document.getElementById('disclaimerClose');
+
+            overlay.style.display = 'flex';
+
+            closeButton.addEventListener('click', function() {
+                overlay.style.display = 'none';
+            });
+        });
+    </script>
+
 </body>
 </html>
